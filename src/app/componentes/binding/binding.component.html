@@ -1,0 +1,26 @@
+<!-- 
+{{nombreVariable}} -> utilizar variable del controller (interpolacion)
+[(ngModel)] = "variableController" -> modificar el estado/valor actual de una variable
+(ngModelChange)="nombreDelMetodo($event)" -> accionar este metodo cuando se modifica el estado/valor de variable
+(nombreCualquiera)="nombreDelMetodo($event?opcional)" -> bindear un metodo con un elemento html 
+-->
+
+<input type="text" [(ngModel)]="edadUno" placeholder="Ingrese edad N° 1"><br><br>
+<input type="text" [(ngModel)]="edadDos" placeholder="Ingrese edad N° 2">
+
+<br><br>
+
+<input type="button" value="Calcular" (click)="calcularPromedio()">
+<input type="button" value="Limpiar campos" (click)="limpiarCampos()">
+<hr>
+
+<h4>Promedio:</h4>
+<input type="text" [(ngModel)]="promedio" disabled>
+<br>
+<h4>Suma:</h4>
+<input type="text" [(ngModel)]="suma" disabled>
+
+
+
+
+
